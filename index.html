@@ -4,75 +4,113 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Glucostats – Diabetes & Health Tracker</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      background: #f4f9fb;
       margin: 0;
-      padding: 0;
-      color: #222;
+      font-family: 'Inter', sans-serif;
+      background-color: #0e1117;
+      color: #ffffff;
     }
-
     .container {
-      max-width: 900px;
-      margin: 0 auto;
+      max-width: 960px;
+      margin: auto;
       padding: 2rem;
+    }
+    header, section {
+      padding: 4rem 2rem;
       text-align: center;
     }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #2b6777;
-      margin-bottom: 1rem;
+    h1, h2 {
+      font-weight: 600;
+      color: #00d084;
     }
-
     p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+      color: #ccc;
+      font-size: 1.1rem;
     }
-
-    .screenshots {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-
-    .screenshot {
+    img.screenshot {
       max-width: 100%;
-      width: 280px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-top: 1.5rem;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
-
-    .play-badge img {
+    .feature {
+      margin-bottom: 4rem;
+    }
+    .play-btn img {
       height: 60px;
+      margin-top: 2rem;
+    }
+    footer {
+      background-color: #1c1f26;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Glucostats – Diabetes & Health Tracker</h1>
-    <p>
-      Track your glucose, insulin, carbs, weight, and HbA1c – all in one place.<br />
-      Stay in control and gain insights with smart charts and reports.
-    </p>
+    <header data-aos="fade-up">
+      <h1>Glucostats</h1>
+      <p>Your all-in-one diabetes & health tracker — intuitive, private, and ad-free.</p>
+      <div class="play-btn">
+        <a href="https://play.google.com/store/apps/details?id=app.glucostats&pcampaignid=web_share" target="_blank">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+        </a>
+      </div>
+    </header>
 
-    <div class="screenshots">
-      <img src="screenshot_en_1.jpg" alt="Glucostats Screenshot" class="screenshot">
-      <img src="screenshot_en_2.jpg" alt="Glucostats Screenshot" class="screenshot">
-      <img src="screenshot_en_3.jpg" alt="Glucostats Screenshot" class="screenshot">
-      <img src="screenshot_en_4.jpg" alt="Glucostats Screenshot" class="screenshot">
-      <img src="screenshot_en_5.jpg" alt="Glucostats Screenshot" class="screenshot">
-    </div>
+    <section class="feature" data-aos="fade-up">
+      <h2>Understand Your Glucose Trends</h2>
+      <p>Visualize your glucose levels over time. See highs, lows, time in range, and personalized targets.</p>
+      <img src="img/Screenshot_20250430_211548_Glucostats.jpg" alt="Glucose Summary" class="screenshot">
+    </section>
 
-    <div class="play-badge">
-      <a href="https://play.google.com/store/apps/details?id=app.glucostats&pcampaignid=web_share" target="_blank" rel="noopener">
-        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
-      </a>
-    </div>
+    <section class="feature" data-aos="fade-up">
+      <h2>Track Your Insulin Usage</h2>
+      <p>Monitor both basal and bolus doses in daily charts. Stay informed and on track with your therapy.</p>
+      <img src="img/Screenshot_20250430_211556_Glucostats.jpg" alt="Insulin Tracking" class="screenshot">
+    </section>
+
+    <section class="feature" data-aos="fade-up">
+      <h2>Monitor Your Weight Progress</h2>
+      <p>Log and track weight changes with clear graphs. Stay accountable with long-term trends.</p>
+      <img src="img/Screenshot_20250430_211602_Glucostats.jpg" alt="Weight Tracking" class="screenshot">
+    </section>
+
+    <section class="feature" data-aos="fade-up">
+      <h2>Track Your HbA1c Over Time</h2>
+      <p>Stay on top of your long-term glucose control with HbA1c trend graphs and changes.</p>
+      <img src="img/Screenshot_20250430_211609_Glucostats.jpg" alt="HbA1c Tracking" class="screenshot">
+    </section>
+
+    <section class="feature" data-aos="fade-up">
+      <h2>Understand Your Carbohydrate Intake</h2>
+      <p>See how your daily carb intake varies and how it impacts glucose with easy-to-read bar charts.</p>
+      <img src="img/Screenshot_20250430_211615_Glucostats.jpg" alt="Carb Tracking" class="screenshot">
+    </section>
+
+    <section class="feature" data-aos="fade-up">
+      <h2>Stay on Track with the Smart Dashboard</h2>
+      <p>Quickly view your most recent entries and key metrics — all in one clean, real-time dashboard.</p>
+      <img src="img/Screenshot_20250430_211943_Glucostats.jpg" alt="Dashboard" class="screenshot">
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Why Choose Glucostats?</h2>
+      <p>No account required. No ads. Full privacy. Glucostats helps you focus on what matters — your health.</p>
+    </section>
   </div>
+
+  <footer>
+    &copy; 2025 Glucostats · <a href="mailto:support@glucostats.app" style="color:#00d084">support@glucostats.app</a>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>

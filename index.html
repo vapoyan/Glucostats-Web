@@ -14,12 +14,14 @@
       color: #ffffff;
     }
     .container {
-      max-width: 960px;
+      max-width: 1200px;
       margin: auto;
       padding: 2rem;
     }
     header, section {
       padding: 4rem 2rem;
+    }
+    header {
       text-align: center;
     }
     h1, h2 {
@@ -33,11 +35,23 @@
     img.screenshot {
       max-width: 100%;
       border-radius: 12px;
-      margin-top: 1.5rem;
       box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
     .feature {
-      margin-bottom: 4rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 6rem;
+    }
+    .feature:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .feature img {
+      flex: 1 1 45%;
+    }
+    .feature-text {
+      flex: 1 1 50%;
     }
     .play-btn img {
       height: 60px;
@@ -50,67 +64,85 @@
       font-size: 0.9rem;
       color: #888;
     }
+    @media (max-width: 768px) {
+      .feature {
+        flex-direction: column !important;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header data-aos="fade-up">
-      <h1>Glucostats</h1>
-      <p>Your all-in-one diabetes & health tracker — intuitive, private, and ad-free.</p>
-      <div class="play-btn">
-        <a href="https://play.google.com/store/apps/details?id=app.glucostats&pcampaignid=web_share" target="_blank">
-          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
-        </a>
-      </div>
-    </header>
+<div class="container">
+  <header data-aos="fade-up">
+    <h1>Glucostats</h1>
+    <p>Your all-in-one diabetes & health tracker — intuitive, private, and ad-free.</p>
+    <div class="play-btn">
+      <a href="https://play.google.com/store/apps/details?id=app.glucostats&pcampaignid=web_share" target="_blank">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+      </a>
+    </div>
+  </header>
 
-    <section class="feature" data-aos="fade-up">
+  <section class="feature" data-aos="fade-up">
+    <img src="img/Screenshot_20250430_211548_Glucostats.jpg" alt="Glucose Summary" class="screenshot">
+    <div class="feature-text">
       <h2>Understand Your Glucose Trends</h2>
-      <p>Visualize your glucose levels over time. See highs, lows, time in range, and personalized targets.</p>
-      <img src="img/Screenshot_20250430_211548_Glucostats.jpg" alt="Glucose Summary" class="screenshot">
-    </section>
+      <p>Track your average, highest and lowest blood glucose levels with clear summaries and visual graphs. See how much time you spend in range and spot problematic trends before they become issues.</p>
+    </div>
+  </section>
 
-    <section class="feature" data-aos="fade-up">
+  <section class="feature" data-aos="fade-up">
+    <img src="img/Screenshot_20250430_211556_Glucostats.jpg" alt="Insulin Tracking" class="screenshot">
+    <div class="feature-text">
       <h2>Track Your Insulin Usage</h2>
-      <p>Monitor both basal and bolus doses in daily charts. Stay informed and on track with your therapy.</p>
-      <img src="img/Screenshot_20250430_211556_Glucostats.jpg" alt="Insulin Tracking" class="screenshot">
-    </section>
+      <p>Effortlessly monitor both bolus and basal insulin doses across time. Visualized bar charts help you stay consistent and adjust therapy with precision.</p>
+    </div>
+  </section>
 
-    <section class="feature" data-aos="fade-up">
+  <section class="feature" data-aos="fade-up">
+    <img src="img/Screenshot_20250430_211602_Glucostats.jpg" alt="Weight Tracking" class="screenshot">
+    <div class="feature-text">
       <h2>Monitor Your Weight Progress</h2>
-      <p>Log and track weight changes with clear graphs. Stay accountable with long-term trends.</p>
-      <img src="img/Screenshot_20250430_211602_Glucostats.jpg" alt="Weight Tracking" class="screenshot">
-    </section>
+      <p>Track your weight with smooth, interactive graphs. Whether your goal is to maintain, reduce, or increase weight, Glucostats shows your progress and trends clearly.</p>
+    </div>
+  </section>
 
-    <section class="feature" data-aos="fade-up">
+  <section class="feature" data-aos="fade-up">
+    <img src="img/Screenshot_20250430_211609_Glucostats.jpg" alt="HbA1c Tracking" class="screenshot">
+    <div class="feature-text">
       <h2>Track Your HbA1c Over Time</h2>
-      <p>Stay on top of your long-term glucose control with HbA1c trend graphs and changes.</p>
-      <img src="img/Screenshot_20250430_211609_Glucostats.jpg" alt="HbA1c Tracking" class="screenshot">
-    </section>
+      <p>Keep a close eye on your long-term glucose control. Enter HbA1c manually and visualize your changes over time to stay aligned with your health goals.</p>
+    </div>
+  </section>
 
-    <section class="feature" data-aos="fade-up">
+  <section class="feature" data-aos="fade-up">
+    <img src="img/Screenshot_20250430_211615_Glucostats.jpg" alt="Carb Tracking" class="screenshot">
+    <div class="feature-text">
       <h2>Understand Your Carbohydrate Intake</h2>
-      <p>See how your daily carb intake varies and how it impacts glucose with easy-to-read bar charts.</p>
-      <img src="img/Screenshot_20250430_211615_Glucostats.jpg" alt="Carb Tracking" class="screenshot">
-    </section>
+      <p>Record and visualize your daily carbohydrate consumption. Glucostats helps you understand the dietary impact on your glucose levels over time.</p>
+    </div>
+  </section>
 
-    <section class="feature" data-aos="fade-up">
+  <section class="feature" data-aos="fade-up">
+    <img src="img/Screenshot_20250430_211943_Glucostats.jpg" alt="Dashboard" class="screenshot">
+    <div class="feature-text">
       <h2>Stay on Track with the Smart Dashboard</h2>
-      <p>Quickly view your most recent entries and key metrics — all in one clean, real-time dashboard.</p>
-      <img src="img/Screenshot_20250430_211943_Glucostats.jpg" alt="Dashboard" class="screenshot">
-    </section>
+      <p>Everything you care about at a glance — glucose, insulin, carbs, and trends. Real-time updates help you stay on top of your diabetes management, right from the home screen.</p>
+    </div>
+  </section>
 
-    <section data-aos="fade-up">
-      <h2>Why Choose Glucostats?</h2>
-      <p>No account required. No ads. Full privacy. Glucostats helps you focus on what matters — your health.</p>
-    </section>
-  </div>
+  <section data-aos="fade-up" style="text-align:center;">
+    <h2>Why Choose Glucostats?</h2>
+    <p>No account required. No ads. Full privacy. Glucostats helps you focus on what matters — your health, without distractions.</p>
+  </section>
+</div>
 
-  <footer>
-    &copy; 2025 Glucostats · <a href="mailto:support@glucostats.app" style="color:#00d084">support@glucostats.app</a>
-  </footer>
+<footer>
+  &copy; 2025 Glucostats · <a href="mailto:support@glucostats.app" style="color:#00d084">support@glucostats.app</a>
+</footer>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>

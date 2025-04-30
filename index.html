@@ -1,52 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Website Under Construction</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            color: #333;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 48px;
-            color: #ff6b6b;
-        }
-        p {
-            font-size: 24px;
-            color: #555;
-        }
-        .loader {
-            margin: 20px auto;
-            border: 8px solid #f3f3f3;
-            border-radius: 50%;
-            border-top: 8px solid #ff6b6b;
-            width: 60px;
-            height: 60px;
-            animation: spin 1.5s linear infinite;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glucostats – Diabetes & Health Tracker</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f4f9fb;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #2b6777;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .screenshots {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .screenshot {
+      max-width: 100%;
+      width: 280px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .play-badge img {
+      height: 60px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Website Under Construction</h1>
-        <p>We are working hard to bring you something awesome. Stay tuned!</p>
-        <div class="loader"></div>
+  <div class="container">
+    <h1>Glucostats – Diabetes & Health Tracker</h1>
+    <p>
+      Track your glucose, insulin, carbs, weight, and HbA1c – all in one place.<br />
+      Stay in control and gain insights with smart charts and reports.
+    </p>
+
+    <div class="screenshots">
+      <img src="screenshot_en_1.jpg" alt="Glucostats Screenshot" class="screenshot">
+      <img src="screenshot_en_2.jpg" alt="Glucostats Screenshot" class="screenshot">
+      <img src="screenshot_en_3.jpg" alt="Glucostats Screenshot" class="screenshot">
+      <img src="screenshot_en_4.jpg" alt="Glucostats Screenshot" class="screenshot">
+      <img src="screenshot_en_5.jpg" alt="Glucostats Screenshot" class="screenshot">
     </div>
+
+    <div class="play-badge">
+      <a href="https://play.google.com/store/apps/details?id=app.glucostats&pcampaignid=web_share" target="_blank" rel="noopener">
+        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" />
+      </a>
+    </div>
+  </div>
 </body>
 </html>

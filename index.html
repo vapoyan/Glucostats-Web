@@ -33,7 +33,8 @@
       font-size: 1.1rem;
     }
     img.screenshot {
-      max-width: 100%;
+      width: 100%;
+      height: auto;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.4);
     }
@@ -41,17 +42,20 @@
       display: flex;
       flex-wrap: wrap;
       align-items: center;
+      justify-content: center;
       gap: 2rem;
       margin-bottom: 6rem;
     }
-    .feature:nth-child(even) {
+    .feature:nth-of-type(even) {
       flex-direction: row-reverse;
     }
     .feature img {
-      flex: 1 1 45%;
+      flex: 1 1 400px;
+      max-width: 500px;
     }
     .feature-text {
-      flex: 1 1 50%;
+      flex: 1 1 400px;
+      max-width: 600px;
     }
     .play-btn img {
       height: 60px;
@@ -68,6 +72,10 @@
       .feature {
         flex-direction: column !important;
         text-align: center;
+      }
+      .feature img, .feature-text {
+        max-width: 100%;
+        flex: 1 1 100%;
       }
     }
   </style>

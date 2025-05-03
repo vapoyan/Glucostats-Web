@@ -28,15 +28,13 @@
       font-weight: 600;
       color: #00d084;
     }
-    p {
+    p, li {
       color: #ccc;
       font-size: 1.1rem;
     }
     img.screenshot {
       width: 100%;
       height: auto;
-      border-radius: 0;
-      box-shadow: none;
     }
     .feature {
       display: flex;
@@ -68,6 +66,27 @@
       font-size: 0.9rem;
       color: #888;
     }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    button {
+      cursor: pointer;
+    }
+    .sticky-download {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #00d084;
+      text-align: center;
+      padding: 10px 0;
+      z-index: 9999;
+    }
+    .sticky-download a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+    }
     @media (max-width: 768px) {
       .feature {
         flex-direction: column !important;
@@ -81,6 +100,9 @@
   </style>
 </head>
 <body>
+<div class="sticky-download">
+  <a href="https://play.google.com/store/apps/details?id=app.glucostats&pcampaignid=web_share" target="_blank">📱 Download Glucostats – Available on Google Play</a>
+</div>
 <div class="container">
   <header data-aos="fade-up">
     <h1>Glucostats</h1>
@@ -92,6 +114,11 @@
     </div>
   </header>
 
+  <section data-aos="fade-up" style="text-align:center; margin-top: 2rem;">
+    <p><strong>I'm building Glucostats for my son, Miko — and for everyone living with diabetes.</strong><br />
+      If a 6-year-old can track, learn, and adapt, so can you. This app is for all the fighters, parents, and caregivers. Try it, shape it with your feedback, and let’s make it better — together.</p>
+  </section>
+
   <section class="feature" data-aos="fade-up">
     <img src="img/Screenshot_20250430_211943_Glucostats.jpg" alt="Dashboard Overview" class="screenshot">
     <div class="feature-text">
@@ -101,7 +128,6 @@
       </p>
     </div>
   </section>
-
 
   <section class="feature" data-aos="fade-up">
     <img src="img/carbs_consumed_per_day.png" alt="Carb Tracking" class="screenshot">
@@ -133,7 +159,6 @@
     </div>
   </section>
 
-
   <section class="feature" data-aos="fade-up">
     <img src="img/weight_over_time.png" alt="Weight Tracking" class="screenshot">
     <div class="feature-text">
@@ -155,8 +180,24 @@
   </section>
 
   <section data-aos="fade-up" style="text-align:center;">
-    <h2>Why Choose Glucostats?</h2>
-    <p>No account required. No ads. Full privacy. Glucostats helps you focus on what matters — your health, without distractions.</p>
+    <h2>Everything You Need, in One App</h2>
+    <ul>
+      <li>✔️ Track glucose, insulin, carbs, weight, and HbA1c</li>
+      <li>✔️ Visual trends and summaries to spot patterns fast</li>
+      <li>✔️ No account needed — your data stays on your device</li>
+      <li>✔️ Clean dashboard, swipeable cards, and intuitive reports</li>
+      <li>✔️ 100% ad-free experience</li>
+    </ul>
+  </section>
+
+  <section data-aos="fade-up" style="text-align:center; margin-top:3rem;">
+    <h2>Request a Feature or Say Hello</h2>
+    <p>Have an idea that would make Glucostats better? Let us know — we're listening.</p>
+    <form action="https://formspree.io/f/yourformid" method="POST" style="max-width: 600px; margin:auto;">
+      <input type="email" name="email" placeholder="Your email (optional)" style="width:100%; padding:10px; margin-bottom:10px; border-radius:6px; border:none;">
+      <textarea name="message" placeholder="What feature would you like to see?" required style="width:100%; padding:10px; height:100px; border-radius:6px; border:none;"></textarea>
+      <button type="submit" style="margin-top:10px; padding:10px 20px; border:none; background-color:#00d084; color:#000; border-radius:6px; font-weight:bold;">Send</button>
+    </form>
   </section>
 </div>
 
